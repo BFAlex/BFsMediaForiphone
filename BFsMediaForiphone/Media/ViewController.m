@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "BFsFFmpegAssistant2.h"
 
 @interface ViewController ()
 
@@ -19,11 +20,16 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewDidAppear:(BOOL)animated {
+    [self testFFmpeg];
 }
 
+#pragma mark - Func
+
+- (void)testFFmpeg {
+    
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"VideoDemo.mp4" ofType:nil];
+    [[BFsFFmpegAssistant2 assistant] decodeVideo:filePath];
+}
 
 @end

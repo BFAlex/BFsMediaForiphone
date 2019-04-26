@@ -13,5 +13,6 @@
 + (instancetype)sharedInstance;
 - (void)destoryInstance;
 //
+- (void)decodeVideo:(NSString *)fileName;
 
 @end

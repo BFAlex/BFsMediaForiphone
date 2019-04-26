@@ -17,6 +17,7 @@
 		945D3C4322677E8600D19891 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 945D3C3C22677E8600D19891 /* libavutil.a */; };
 		945D3C452267805700D19891 /* arm64 in Resources */ = {isa = PBXBuildFile; fileRef = 945D3C442267805700D19891 /* arm64 */; };
 		948CA6E52264DD0600EE2303 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948CA6E42264DD0600EE2303 /* CoreMedia.framework */; };
+		C409C1C12271A31B00DB4BC6 /* BFsFFmpegAssistant2.m in Sources */ = {isa = PBXBuildFile; fileRef = C409C1C02271A31B00DB4BC6 /* BFsFFmpegAssistant2.m */; };
 		E040E7FA225BA9C1007400D2 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E040E7F9225BA9C1007400D2 /* libz.tbd */; };
 		E040E7FC225BA9E2007400D2 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E040E7FB225BA9E2007400D2 /* libbz2.tbd */; };
 		E040E7FE225BA9E9007400D2 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E040E7FD225BA9E9007400D2 /* libiconv.tbd */; };
@@ -52,6 +53,8 @@
 		948CA6E42264DD0600EE2303 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		948CA6F32264F1D300EE2303 /* MediaToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaToolbox.framework; path = System/Library/Frameworks/MediaToolbox.framework; sourceTree = SDKROOT; };
 		948CA7012264F4A200EE2303 /* libz.1.1.3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.1.3.tbd; path = usr/lib/libz.1.1.3.tbd; sourceTree = SDKROOT; };
+		C409C1BF2271A31B00DB4BC6 /* BFsFFmpegAssistant2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFsFFmpegAssistant2.h; sourceTree = "<group>"; };
+		C409C1C02271A31B00DB4BC6 /* BFsFFmpegAssistant2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFsFFmpegAssistant2.m; sourceTree = "<group>"; };
 		E040E7F9225BA9C1007400D2 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		E040E7FB225BA9E2007400D2 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
 		E040E7FD225BA9E9007400D2 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
@@ -184,6 +187,8 @@
 			children = (
 				E07CF787225507EB0016A95C /* BFsFFmpegAssistant.h */,
 				E07CF788225507EB0016A95C /* BFsFFmpegAssistant.m */,
+				C409C1BF2271A31B00DB4BC6 /* BFsFFmpegAssistant2.h */,
+				C409C1C02271A31B00DB4BC6 /* BFsFFmpegAssistant2.m */,
 			);
 			path = FFmpegModule;
 			sourceTree = "<group>";
@@ -280,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E07CF777225505EB0016A95C /* ViewController.m in Sources */,
+				C409C1C12271A31B00DB4BC6 /* BFsFFmpegAssistant2.m in Sources */,
 				E07CF789225507EB0016A95C /* BFsFFmpegAssistant.m in Sources */,
 				E07CF774225505EB0016A95C /* AppDelegate.m in Sources */,
 				E07CF771225505EB0016A95C /* main.m in Sources */,
