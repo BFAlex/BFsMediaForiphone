@@ -7,10 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BFsFFmpegAssistant2 : NSObject
+@property (nonatomic, weak) UIImageView *videoView;
 
 + (instancetype)assistant;
 - (void)decodeVideo:(NSString *)filePath;

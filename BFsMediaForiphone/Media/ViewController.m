@@ -10,6 +10,7 @@
 #import "BFsFFmpegAssistant2.h"
 
 @interface ViewController ()
+@property (nonatomic, weak) UIImageView *imageView;
 
 @end
 
@@ -18,6 +19,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    CGRect imgFrame = CGRectMake(0, 0, 200, 160);
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:imgFrame];
+    imageView.center = self.view.center;
+    [self.view addSubview:imageView];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -28,8 +34,10 @@
 
 - (void)testFFmpeg {
     
+    BFsFFmpegAssistant2 *assistant = [BFsFFmpegAssistant2 assistant];
+    assistant.videoView = self.imageView;
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"VideoDemo.mp4" ofType:nil];
-    [[BFsFFmpegAssistant2 assistant] decodeVideo:filePath];
+    [assistant decodeVideo:filePath];
 }
 
 @end
